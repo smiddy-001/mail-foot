@@ -7,49 +7,53 @@
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
 	body {
+		border: 0;
+		margin: 0;
+		padding: 0;
 		font-family: "Fira Code", monospace;
-		font-size: 12px;
+		/* font-size: 14px; */
 
 		--main-fg-color: rgb(226, 226, 226);
 		--secondary-fg-color: rgb(255, 255, 255);
 
 		--main-bg-color: rgb(19, 19, 19);
-		--secondary-bg-color: rgb(94, 94, 94);
+		--secondary-bg-color: rgb(150, 150, 150);
 
-		--svg-main-size: 12px;
+		--svg-main-size: 16px;
 		--svg-social-size: 24px;
 
 		--horizontal-gap: 2rem;
 		--vertical-gap: 0.5rem;
 
+
 		--line-color: #8586bd09;
 		--line-size: 1px;
 
-		color: var(--main-fg-color);
+		color: rgb(226, 226, 226);
 	}
 	h1 {
 		font-family: "Fira Code", monospace;
-		color: var(--secondary-fg-color);
+		color: rgb(255, 255, 255);
 		font-weight: bold;
 		margin-top: 0;
 		margin-bottom: 8px;
 		font-size: 250%;
-		border-bottom: var(--line-size) solid var(--main-fg-color);
+		border-bottom: 1px solid rgb(226, 226, 226);
 		padding-bottom: 2px;
 	}
 	#wrapper {
 		/* background-image: url('https://media1.giphy.com/media/Nj8b4AlbRUihG/giphy.gif?cid=ecf05e475cdsbaubs98n7qgkuo06gol57ifu2w1i25c6f29n&rid=giphy.gif&ct=g'); */
-		/* background-color: var(--secondary-bg-color); */
+		/* background-color: rgb(255, 255, 255); */
 		/* filter: blur(1px); */
 		background-repeat: no-repeat;
 		background-attachment: fixed;
 		background-size: cover;
 		/* filter: brightness(0.3); */
-		/* background-color: var(--main-bg-color); */
+		/* background-color: rgb(19, 19, 19); */
 	}
 	header {
 		/* filter: blur(333px); */
-		/* background-color: var(--main-bg-color); */
+		/* background-color: rgb(19, 19, 19); */
 		/* mix-blend-mode: color-burn; */
 		/* background-color: rgba(9, 9, 12, 0.8); */
 		background-color: #17171a;
@@ -66,16 +70,16 @@
 		align-items: flex-start; */
 	}
 	img{
-		width: var(--svg-main-size);
+		width: 12px;
 		max-width: 100%;
 	}
 	#bottom img {
-		width: var(--svg-social-size);
+		width: 24px;
 		max-width: 100%;
 	}
 	header {
 		display: grid;
-		grid-template-columns: auto 5rem var(--horizontal-gap) 14rem auto;
+		grid-template-columns: auto 5rem 2rem 14rem auto;
 		grid-template-rows: auto 3rem;
 	}
 	#left {
@@ -84,7 +88,7 @@
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
-		padding: var(--vertical-gap) 0;
+		padding: 0.5rem 0;
 	}
 	/* #left img::before {
 		border-radius: 64px;
@@ -95,7 +99,7 @@
 		width: 64px;
 		height: 64px;
 		border-radius: 50%;
-		border: var(--line-size) solid var(--line-color);
+		border: 1px solid #8586bd09;
 		/* border-radius: 50%; */
 	}
 	/* #left img::after {
@@ -104,8 +108,8 @@
 	#right {
 		grid-row: 1;
 		grid-column: 4;
-		padding: var(--vertical-gap) 0;
-		font-size: var(--svg-main-size);
+		padding: 0.5rem 0;
+		font-size: 12px;
 		display: flex;
 		justify-content: flex-start;
 		align-items: flex-start;
@@ -122,7 +126,7 @@
 		align-items: center;
 		justify-content: center;
 		box-shadow: 0 0 14rem #00000094;
-		border-top: var(--line-size) solid var(--line-color);
+		border-top: 1px solid #8586bd09;
 	}
 	#bottom ul {
 		display: flex;
@@ -133,14 +137,14 @@
 	}
 	a {
 		text-decoration: none;
-		color: var(--main-fg-color);
+		color: rgb(226, 226, 226);
 	}
 </style>
 <body>
 	<div id="wrapper">
 		<header>
 			<div id="left">
-				<img src="https://avatars.githubusercontent.com/u/29213000?v=4" alt="Riley Smith Profile Picture" />
+				<img src="https://i.ibb.co/6PNRBHH/me.png" alt="Riley Smith Profile Picture" />
 			</div>
 			<div id="right">
 				<ul>
