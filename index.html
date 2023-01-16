@@ -8,22 +8,22 @@
 	@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
 	body {
 		font-family: "Fira Code", monospace;
-		font-size: 18px;
+		font-size: 12px;
 
 		--main-fg-color: rgb(226, 226, 226);
 		--secondary-fg-color: rgb(255, 255, 255);
 
 		--main-bg-color: rgb(19, 19, 19);
-		--secondary-bg-color: rgb(161, 125, 125);
+		--secondary-bg-color: rgb(94, 94, 94);
 
-		--svg-main-size: 18px;
-		--svg-social-size: 32px;
+		--svg-main-size: 12px;
+		--svg-social-size: 24px;
 
-		--horizontal-gap: 3rem;
-		--vertical-gap: 3rem;
+		--horizontal-gap: 1rem;
+		--vertical-gap: 0.5rem;
 
 		--line-color: #8586bd09;
-		--line-size: 2px;
+		--line-size: 1px;
 
 		color: var(--main-fg-color);
 	}
@@ -35,7 +35,8 @@
 		font-size: 250%;
 	}
 	#wrapper {
-		background-image: url('https://media1.giphy.com/media/Nj8b4AlbRUihG/giphy.gif?cid=ecf05e475cdsbaubs98n7qgkuo06gol57ifu2w1i25c6f29n&rid=giphy.gif&ct=g');
+		/* background-image: url('https://media1.giphy.com/media/Nj8b4AlbRUihG/giphy.gif?cid=ecf05e475cdsbaubs98n7qgkuo06gol57ifu2w1i25c6f29n&rid=giphy.gif&ct=g'); */
+		background-color: var(--secondary-bg-color);
 		/* filter: blur(1px); */
 		background-repeat: no-repeat;
 		background-attachment: fixed;
@@ -71,7 +72,7 @@
 	header {
 		display: grid;
 		grid-template-columns: auto 10rem var(--horizontal-gap) 22rem auto;
-		grid-template-rows: auto 5rem;
+		grid-template-rows: auto 3rem;
 	}
 	#left {
 		grid-row: 1;
@@ -86,7 +87,8 @@
 	} */
 	#left img {
 		/* padding: 5rem 0; */
-		width: 128px;
+		width: 64px;
+		height: 64px;
 		border-radius: 50%;
 		border: var(--line-size) solid var(--line-color);
 		/* border-radius: 50%; */
